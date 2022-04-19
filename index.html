@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Fauna+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://use.fontawesome.com/603c567854.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="entire">
+        <!--Landing Page-->
+        <section id="home">
+            <div class="overlay">
+                <nav class="navigation">
+                    <ul class="list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Me</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                        <li><a href="#">Buy Me Coffee</a></li>
+                    </ul>
+                </nav>
+                <!--End of Navbar-->
+                <div class="container">
+                    <h1><span class="logo">Adi Gulalkari</span><small> Portfolio Webpage</small></h1>
+                </div>
+                <!--End Of Container-->
+        </section>
+
+        <!-- End of Landing Page -->
+
+        <!-- About Page -->
+        <section id="about">
+            <!-- container -->
+            <div class="about-container">
+                <div class="about-header">Something About Me....</div>
+                <div class="about-info">
+                    Hey!<br><br>I am a first year student studying Computer Science with spl. in Data Science at VIT Vellore. I obsess over the minor details in CSS/HTML and am passionate in making my projects stand out. I like to explore new domains
+                    and challenge myself in those fields. Currently trying to perfect JS to make my Frontend look cooler. Apart from my hobbies in the digital field, I love to bake and cook and also am a Space Enthusiast.
+                    <img src="profile-pic.jpeg" alt="profile" class="profile-pic">
+                </div>
+                <div class="signature">.Adi Gulalkari</div>
+                <!-- Skill Set -->
+                <div class="skills">
+                    <div class="skills-header">Some of my Skills:</div>
+                    <div class="skills-container">
+                        <div class="skill1">HTML</div>
+                        <div class="skill2">CSS</div>
+                        <div class="skill3">Javascript</div>
+                        <div class="skill4">Python</div>
+                        <div class="skill5">Numpy-Pandas</div>
+                        <div class="skill6">C</div>
+                        <div class="skill7">C++</div>
+                        <div class="skill8">MatLab</div>
+                    </div>
+                </div>
+                <!-- Skill Set ends -->
+            </div>
+        </section>
+        <!-- End of About Page -->
+
+        <!-- Projects -->
+        <section id="projects">
+            <div class="projects-header">
+                Take A look at some of my Projects...
+            </div>
+            <div class="projects-container">
+                <div class="project-item">
+                    <h1>SpaceX Parody</h1>
+                    <div class="inner-container">
+                        <img src="spacex-project.png" alt="spacex webpage">
+                        <div class="description">I tried to make my own version of the SpaceX website. Although it is not complete, this is one of my first project I undertook. The webpage has embeded code of one of the SpaceX YouYube videos. I have tried to add as many new features
+                            that I had learnt regarding CSS into it.<br><br>
+                            <div class="tools">
+                                <h2>FEATURES<span><i class="fa fa-cog" aria-hidden="true"></i></span></h2>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>iframe</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <h1>Expense Tracker</h1>
+                    <div class="inner-container">
+                        <img src="expense-tracker-project.png" alt="Expense Tracker">
+                        <div class="description">This is a very interesting project that I created. It an expense tracker which takes an input either as income or expense and shows the total balance. I used local storage of the browser to build this webpage which was something
+                            new that I had learnt. <br><br>
+                            <div class="tools">
+                                <h2>FEATURES <span><i class="fa fa-cog" aria-hidden="true"></i></span></h2>
+                                <ul>
+                                    <li>Local Storage
+                                    </li>
+                                    <li>CSS</li>
+                                    <li>Javascript</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <h1>DiceGame</h1>
+                    <div class="inner-container">
+                        <img src="dicegame-project.png" alt="DiceGame">
+                        <div class="description">So this is a simple Dice Game.The point of this game is to guess the two random numbers generated by the computer. A smiley face jumps in the screen when you guess a single correct answer. Similarly the is an animation of fireworks
+                            whenever the user inputs both the correct answers. Through this project I was able to learn about animation in CSS and how they are enhanced using JS. <br><br>
+                            <div class="tools">
+                                <h2>FEATURES<span><i class="fa fa-cog" aria-hidden="true"></i></span></h2>
+                                <ul>
+                                    <li>Animations</li>
+                                    <li>CSS</li>
+                                    <li>Javascript
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+        </section>
+        <!-- Projects Ends -->
+
+        <section id="contact">
+            <div class="contact-header">
+                <br>Lets Get in Touch...
+            </div>
+            <div class="contact-container">
+                <form action="javascript:void(0);">
+                    <div class="contact-content">
+                        <label for="name">Name
+                        <input type="text" name="name" id="name" placeholder="Enter your Name" required>
+                    </label>
+                        <br><br>
+                        <label for="email">Email
+                        <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+                    </label>
+                        <br><br>
+                        <label for="text-area">Tell me something<br>
+                        <textarea name="text-area" id="text-area" cols="20" rows="5"
+                            placeholder="Give me a feedback"></textarea></label>
+                        <br><br>
+                        <input type="submit" onclick="displayMessage()"><br><br>
+                        <div class="message" style="display: none;" id="message">Thanks for feedback!!!<br></div>
+                    </div>
+                    <div class="contact-picture">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
